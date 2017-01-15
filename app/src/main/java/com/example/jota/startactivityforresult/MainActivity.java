@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void abrirActivity(View v){
         Intent i = new Intent(this,Main2Activity.class);
-        i.putExtra("nombre",nombre.getText());
+        i.putExtra("nombre",nombre.getText().toString());
         startActivityForResult(i,1);
     }
 }
